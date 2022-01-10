@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Proyecto JQuery UI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+  <!-- SECCIÓN DE BIENVENIDA-->
+  <div class="divFullHeight">
+    <div class="divInterior" style="top: 25vh;">
+      <h1>Bienvenido/a a mi proyecto de JQuery UI</h1>
+      <p>He preparado esto para que puedas probar todos los widgets, efectos e interacciones que nos ofrece esta librería.</p>
+      <div id="accordion">
+        <h3>Interacciones</h3>
+        <div>Las interacciones agregan comportamientos básicos basados ​​en el mouse a cualquier elemento. Puede crear listas ordenables, elementos redimensionables, comportamientos de arrastrar y soltar y más con solo unas pocas líneas de código. Las interacciones también son excelentes bloques de construcción para aplicaciones y widgets más complejos.</div>
+        <h3>Widgets</h3>
+        <div>Los widgets son controles de interfaz de usuario con todas las funciones que llevan la riqueza de las aplicaciones de escritorio a la Web. Todos los widgets proporcionan un núcleo sólido con una gran cantidad de puntos de extensión para personalizar el comportamiento, así como compatibilidad con temas completos.</div>
+        <h3>Efectos</h3>
+        <div>Los efectos añaden soporte para animar colores y transiciones de clases, además de proporcionar varias facilidades adicionales. Además, se encuentra disponible un conjunto completo de efectos personalizados para usar al mostrar y ocultar elementos o simplemente para agregar algo de atractivo visual.</div>
+      </div>
+      <a href="#seccion2"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+    </div>  
+  </div>
+
+  <!-- SECCIÓN INTERACCIONES-->
+  <div class="divFullHeight" id="seccion2">
+    <div class="divInterior" style="top: 35vh;">
+      <h1>Interacciones</h1>
+      <p>Comencemos con las interacciones</p>
+      <a href="#seccion3"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+    </div> 
+  </div>
+
+  <!-- SECCIÓN DRAGGABLE-->
+  <div class="divFullHeight2" id="seccion3">
+    <div class="divInterior row">
+      <div class="col-6">
+        <h1 >Draggable & Droppable</h1>
+        <p>Las dos primeras interacciones que vamos a ver son <i>draggable</i> y <i>droppable</i>. <i>Draggable</i> nos permite mover elementos con el ratón y <i>droppable</i> crea un target para estos.</p>
+      <div id="draggable" class="ui-widget-content" style="width: 100px; height: 100px; padding: 30px 10px;">
+        <img src="images/59cfc7a9d3b1936210a5ddd4.png" alt="" style="width: 100px;">
+      </div>
+      <div id="draggable2" class="ui-widget-content" style="width: 100px; height: 100px; padding: 30px 10px;">
+        <img src="images/580b57fbd9996e24bc43bcb0.png" alt="" style="width: 100px;">
+      </div>
+      <div id="draggable3" class="ui-widget-content" style="width: 100px; height: 100px; padding: 30px 10px;">
+        <img src="images/pngegg (1).png" alt="" style="width: 100px;">
+      </div>
+      </div>
+      <div class="col-6 col2FullHeight2">
+        <a class="col-6" href="#seccion4"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+        <div id="droppable" class="ui-widget-header" style="width: 100px; height: 100px; padding: 30px 10px; margin-top: 200px;">
+          <p>Depositar aquí</p>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <!-- SECCIÓN RESIZABLE-->
+  <div class="divFullHeight2" id="seccion4">
+    <div class="divInterior row">
+      <div class="col-6">
+        <h1 >Resizable</h1>
+        <p><i>Resizable</i> nos permite cambiar el tamaño de un elemento con el ratón.</p>
+        <div id="resizable" class="ui-widget-content">
+          <h3 class="ui-widget-header" style="padding: 10px;">Resizable</h3>
+          <p style="padding: 10px;">Hola! Prueba a cambiarme de tamaño</p>
+        </div>
+      </div>
+      <div class="col-6 col2FullHeight2">
+        <a class="col-6" href="#seccion5"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+      </div>
+    </div> 
+  </div>
+
+  <!-- SECCIÓN SELECTABLE & SORTABLE-->
+  <div class="divFullHeight2" id="seccion5">
+    <div class="divInterior row">
+      <div class="col-6">
+        <h1 >Selectable & Sortable</h1>
+        <p>Las últimas dos interacciones que vamos a probar son <i>selectable</i> y <i>sortable</i>. Nos permiten elegir y ordenar elementos respectivamente.</p>
+        <br>
+        <h3>Prueba a seleccionar algún elemento.</h3>
+        <ol id="selectable">
+          <li class="ui-widget-content">Objeto seleccionable 1</li>
+          <li class="ui-widget-content">Objeto seleccionable 2</li>
+          <li class="ui-widget-content">Objeto seleccionable 3</li>
+          <li class="ui-widget-content">Objeto seleccionable 4</li>
+          <li class="ui-widget-content">Objeto seleccionable 5</li>
+          <li class="ui-widget-content">Objeto seleccionable 6</li>
+          <li class="ui-widget-content">Objeto seleccionable 7</li>
+        </ol>
+      </div>
+      <div class="col-6 col2FullHeight2">
+        <a class="col-6" href="#seccion6"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+        <h3 style="text-align: left; margin-top: 105px;">Prueba a ordenar los elementos.</h3>
+        <ul id="sortable">
+          <li class="ui-state-default">Objeto ordenable 1</li>
+          <li class="ui-state-default">Objeto ordenable 2</li>
+          <li class="ui-state-default">Objeto ordenable 3</li>
+          <li class="ui-state-default">Objeto ordenable 4</li>
+          <li class="ui-state-default">Objeto ordenable 5</li>
+          <li class="ui-state-default">Objeto ordenable 6</li>
+          <li class="ui-state-default">Objeto ordenable 7</li>
+        </ul>
+      </div>
+    </div> 
+  </div>
+
+<!-- SECCIÓN WIDGETS-->
+  <div class="divFullHeight" id="seccion6">
+    <div class="divInterior" style="top: 35vh;">
+      <h1>Widgets</h1>
+      <p>Comencemos con los widgets</p>
+      <a href="#seccion7"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+    </div> 
+  </div>
+
+<!-- SECCIÓN SLIDER DE WIDGETS-->
+  <div class="divFullHeight2" id="seccion7">
+    <div class="divInterior row">
+      <div class="col-6">
+        <h1 >Widgets</h1>
+        <p>En este slider podrás probar los widgets más relevantes que ofrece JQuery UI.</p>
+      </div>
+      <div class="col-6 col2FullHeight2">
+        <a class="col-6" href="#seccion8"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+      </div>
+      <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <!-- SECCIÓN SLIDER-->
+        <div class="carousel-inner">
+          <!-- ITEM-->
+          <div class="carousel-item active">
+            <h3>Acordeón</h3>
+            <p>Muestra paneles de contenido plegables para presentar información en un espacio limitado.</p>
+            <div id="accordion2">
+              <h3>Interacciones</h3>
+              <div>Las interacciones agregan comportamientos básicos basados ​​en el mouse a cualquier elemento. Puede crear listas ordenables, elementos redimensionables, comportamientos de arrastrar y soltar y más con solo unas pocas líneas de código. Las interacciones también son excelentes bloques de construcción para aplicaciones y widgets más complejos.</div>
+              <h3>Widgets</h3>
+              <div>Los widgets son controles de interfaz de usuario con todas las funciones que llevan la riqueza de las aplicaciones de escritorio a la Web. Todos los widgets proporcionan un núcleo sólido con una gran cantidad de puntos de extensión para personalizar el comportamiento, así como compatibilidad con temas completos.</div>
+              <h3>Efectos</h3>
+              <div>Los efectos añaden soporte para animar colores y transiciones de clases, además de proporcionar varias facilidades adicionales. Además, se encuentra disponible un conjunto completo de efectos personalizados para usar al mostrar y ocultar elementos o simplemente para agregar algo de atractivo visual.</div>
+            </div>
+          </div>
+          <!-- ITEM-->
+          <div class="carousel-item">
+            <h3>Autocompletado</h3>
+            <p>Permite a los usuarios buscar y seleccionar rápidamente de una lista de valores completada previamente a medida que escriben, aprovechando la búsqueda y el filtrado.</p>
+            <div class="ui-widget">
+              <label for="tags">Tags: </label>
+              <input id="tags">
+            </div>
+          </div>
+          <!-- ITEM-->
+          <div class="carousel-item">
+            <h3>Selector de fechas</h3>
+            <p>Seleccione una fecha de un calendario emergente o en línea</p>
+            <p>Date: <input type="text" id="datepicker"></p>
+          </div>
+          <!-- ITEM-->
+          <div class="carousel-item">
+            <h3>Diálogo</h3>
+            <p>Contenido abierto en una superposición interactiva.</p>
+            <div id="dialog" title="Mensaje">
+              <p>Hola! Esperamos que disfrutes de tu estancia en nuestra web.</p>
+            </div>
+          </div>
+          <!-- ITEM-->
+          <div class="carousel-item">
+            <h3>Menú</h3>
+            <p>Menú personalizable con interacciones de mouse y teclado para la navegación.</p>
+            <ul id="menu">
+              <li><div>Interacciones</div></li>
+                <ul>
+                  <li><div>Draggable & Droppable</div></li>
+                  <li><div>Resizable</div></li>
+                  <li><div>Selectable & Sortable</div></li>
+                </ul>
+              <li><div>Widgets</div></li>
+              <li><div>Efectos</div>
+            </ul>
+          </div>
+          <!-- ITEM-->
+          <div class="carousel-item">
+            <h3>Barra de progreso</h3>
+            <p>Muestra el estado de un proceso determinado o indeterminado.</p>
+            <div id="progressbar"></div>
+          </div>
+          <!-- ITEM-->
+          <div class="carousel-item">
+            <h3>Tabs</h3>
+            <p>Un área de contenido única con varios paneles, cada uno asociado con un encabezado en una lista.</p>
+            <div id="tabs">
+              <ul>
+                <li><a href="#tabs-1">Interacciones</a></li>
+                <li><a href="#tabs-2">Widgets</a></li>
+                <li><a href="#tabs-3">Efectos</a></li>
+              </ul>
+              <div id="tabs-1">
+                <p>Las interacciones agregan comportamientos básicos basados ​​en el mouse a cualquier elemento. Puede crear listas ordenables, elementos redimensionables, comportamientos de arrastrar y soltar y más con solo unas pocas líneas de código. Las interacciones también son excelentes bloques de construcción para aplicaciones y widgets más complejos.</p>
+              </div>
+              <div id="tabs-2">
+                <p>Los widgets son controles de interfaz de usuario con todas las funciones que llevan la riqueza de las aplicaciones de escritorio a la Web. Todos los widgets proporcionan un núcleo sólido con una gran cantidad de puntos de extensión para personalizar el comportamiento, así como compatibilidad con temas completos.</p>
+              </div>
+              <div id="tabs-3">
+                <p>Los efectos añaden soporte para animar colores y transiciones de clases, además de proporcionar varias facilidades adicionales. Además, se encuentra disponible un conjunto completo de efectos personalizados para usar al mostrar y ocultar elementos o simplemente para agregar algo de atractivo visual.</p>
+              </div>
+            </div>
+          </div>
+          <!-- ITEM-->
+          <div class="carousel-item">
+            <h3>Tooltip</h3>
+            <p>Información sobre herramientas personalizable y temática, que reemplaza la información sobre herramientas nativa.</p>
+            <p>can be attached to any element. When you hover    <a href="#" title="That&apos;s what this widget is">Tooltips</a> 
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div> 
+  </div>
+
+  <!-- SECCIÓN EFECTOS-->
+  <div class="divFullHeight" id="seccion8">
+    <div class="divInterior" style="top: 35vh;">
+      <h1>Efectos</h1>
+      <p>Veamos los efectos más interesantes que nos ofrece JQuery UI</p>
+      <a href="#seccion9"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+    </div> 
+  </div>
+
+  <!-- SECCIÓN EFECTOS2-->
+  <div class="divFullHeight2" id="seccion9">
+    <div class="divInterior row">
+      <div class="col-6">
+        <h1 >Efectos</h1>
+        <p><i>Resizable</i> nos permite cambiar el tamaño de un elemento con el ratón.</p>
+        <div>
+          <div class="toggler">
+            <div id="effect" class="ui-widget-content ui-corner-all">
+              <h3 class="ui-widget-header ui-corner-all">Aparecer</h3>
+              <p>
+                Eh! Mira cómo aparezco.
+              </p>
+            </div>
+          </div>
+           
+          <select name="effects" id="effectTypes">
+            <option value="blind">Blind</option>
+            <option value="bounce">Bounce</option>
+            <option value="clip">Clip</option>
+            <option value="drop">Drop</option>
+            <option value="explode">Explode</option>
+            <option value="fade">Fade</option>
+            <option value="fold">Fold</option>
+            <option value="highlight">Highlight</option>
+            <option value="puff">Puff</option>
+            <option value="pulsate">Pulsate</option>
+            <option value="scale">Scale</option>
+            <option value="shake">Shake</option>
+            <option value="size">Size</option>
+            <option value="slide">Slide</option>
+          </select>
+           
+          <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+        </div>
+      </div>
+      <div class="col-6 col2FullHeight2">
+        <a class="col-6" href="#seccion10"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+        <div style="text-align: left; margin-top: 65px;">
+          <div class="toggler">
+            <div id="effect2" class="ui-widget-content ui-corner-all">
+              <h3 class="ui-widget-header ui-corner-all">Desvanecer</h3>
+              <p>
+                Eh! Y mira cómo desaparezco.
+              </p>
+            </div>
+          </div>
+           
+          <select name="effects" id="effectTypes">
+            <option value="blind">Blind</option>
+            <option value="bounce">Bounce</option>
+            <option value="clip">Clip</option>
+            <option value="drop">Drop</option>
+            <option value="explode">Explode</option>
+            <option value="fade">Fade</option>
+            <option value="fold">Fold</option>
+            <option value="highlight">Highlight</option>
+            <option value="puff">Puff</option>
+            <option value="pulsate">Pulsate</option>
+            <option value="scale">Scale</option>
+            <option value="shake">Shake</option>
+            <option value="size">Size</option>
+            <option value="slide">Slide</option>
+          </select>
+           
+          <button id="button2" class="ui-state-default ui-corner-all">Run Effect</button>
+           
+        </div>
+      </div>
+      
+    </div> 
+  </div>
+
+  <!-- SECCIÓN API-->
+  <div class="divFullHeight" id="seccion10">
+    <div class="divInterior" style="top: 35vh;">
+      <h1>API</h1>
+      <p>Ahora vamos a ver la integración de una API en nuestra web.</p>
+      <a href="#seccion11"><button type="button" class="btn btn-primary boton">Siguiente</button></a>
+    </div> 
+  </div>
+
+  <!-- SECCIÓN POKEDEX-->
+  <div class="divFullHeight2" id="seccion11">
+    <div class="divInterior row">
+      <div class="col-6">
+        <h1 >Pokedex</h1>
+        <p>Introduce el nombre de un <a href="#" title="No conoces ningún Pokemon? No te preocupes, prueba con estos : Mewtwo, Charizard, Pikachu, Rayquaza">Pokemon</a> y la <a href="#" title="La Pokédex, en el mundo ficticio de Pokémon, es una enciclopedia electrónica portátil que los entrenadores Pokémon llevan consigo para registrar automáticamente las fichas de todas las diversas especies Pokémon vistas y capturadas durante su viaje como entrenadores.​​ ">pokedex</a> te propocionará información acerca de él.</p>
+        <form action="" onsubmit="searchPokemon(event)">
+          <input type="text" name="pokemon" autocomplete="off">
+        </form>
+        <h4 style="margin-top: 50px;">Quieres una experiencia completa?</h4>
+        <p>Disfruta de la música de pokemon mientras usas nuestra Pokedex.</p>
+        <audio controls loop>
+          <source src="music/Pokemon Black & White Music - Driftveil City Music.mp3" type="audio/ogg">
+        </audio>
+      
+    </div> 
+    <div class="col-6 col2FullHeight2">
+      <div id="tabs2">
+        <ul>
+          <li><a href="#tabs2-1">Resumen</a></li>
+          <li><a href="#tabs2-2">Objetos</a></li>
+          <li><a href="#tabs2-3">Habilidades</a></li>
+        </ul>
+        <div id="tabs2-1">
+          <div data-poke-card class="poke-card">
+            <h5 data-poke-name>Pokedex</h5>
+            <div data-poke-img-container class="img-container">
+                <img data-poke-img class="poke-img" src="./poke-shadow.png"/>
+            </div>
+            <div data-poke-id></div>
+            <div data-poke-types class="poke-types"></div>
+            <div data-poke-stats class="poke-stats"></div>
+        </div>
+        </div>
+        <div id="tabs2-2">
+          <div data-poke-card class="poke-card">
+            <h5>Objetos</h5> 
+            <div data-poke-held_items class="poke-held_items"></div>
+        </div>
+        </div>
+        <div id="tabs2-3">
+          <div data-poke-card class="poke-card">
+            <div data-poke-card class="poke-card">
+              <h5>Habilidades</h5>
+              <div data-poke-abilities class="poke-abilities"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+    $( "#accordion" ).accordion();
+    $( "#accordion2" ).accordion();
+    $( "#draggable" ).draggable();
+    $( "#draggable2" ).draggable();
+    $( "#draggable3" ).draggable();
+    $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Depositado" );
+      }
+    });
+    $( "#resizable" ).resizable();
+    $( "#sortable" ).sortable();
+    $( "#selectable" ).selectable();
+    $( "#datepicker" ).datepicker();
+    $( "#dialog" ).dialog();
+    $( "#menu" ).menu();
+    $( "#progressbar" ).progressbar({
+      value: 37
+    });
+    $( "#tabs" ).tabs();
+    $( "#tabs2" ).tabs();
+    $( document ).tooltip();
+
+    var availableTags = [
+      "Draggable",
+      "Droppable",
+      "Resizable",
+      "Selectable",
+      "Sortable",
+      "Accordion",
+      "Autocomplete",
+      "Checkboxradio",
+      "Controlgroup",
+      "Datepicker",
+      "Dialog",
+      "Menu",
+      "Progress bar",
+      "Selectmenu",
+      "Slider",
+      "Spinner",
+      "Tabs",
+      "Tooltip",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+    
+    $( function() {
+    function runEffect() {
+    var selectedEffect = $( "#effectTypes" ).val();
+    var options = {};
+    if ( selectedEffect === "scale" ) {
+      options = { percent: 50 };
+    } else if ( selectedEffect === "size" ) {
+      options = { to: { width: 280, height: 185 } };
+    }
+    $( "#effect" ).show( selectedEffect, options, 500, callback );
+    };
+ 
+    function callback() {
+      setTimeout(function() {
+        $( "#effect:visible" ).removeAttr( "style" ).fadeOut();
+      }, 1000 );
+    };
+ 
+  
+    $( "#button" ).on( "click", function() {
+      runEffect();
+    });
+ 
+    $( "#effect" ).hide();
+  } );
+
+
+  function runEffect() {
+    var selectedEffect = $( "#effectTypes" ).val();
+    var options = {};
+    if ( selectedEffect === "scale" ) {
+      options = { percent: 50 };
+    } else if ( selectedEffect === "size" ) {
+      options = { to: { width: 200, height: 60 } };
+    } 
+    $( "#effect2" ).hide( selectedEffect, options, 1000, callback );
+    };
+ 
+    
+  function callback() {
+    setTimeout(function() {
+      $( "#effect2" ).removeAttr( "style" ).hide().fadeIn();
+      }, 1000 );
+    };
+
+  $( "#button2" ).on( "click", function() {
+    runEffect();
+  });
+
+  
+
+
+  </script>
+
+</body>
+</html>

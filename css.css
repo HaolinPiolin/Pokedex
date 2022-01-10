@@ -1,0 +1,229 @@
+.divFullHeight {
+    text-align: center;
+    height: 95vh;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+}
+
+.divFullHeight2 {
+    text-align: left;
+    height: 95vh;
+    padding: 50px;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+}
+
+.col2FullHeight2 {
+    text-align: right;
+}
+
+.col2FullHeight2 a {
+    margin-right: 50px;
+}
+
+.divInterior{
+    position: relative;
+}
+
+.carousel-item {
+    padding: 40px 200px;
+}
+
+#accordion {
+    text-align: left;
+    position: relative;
+    width: 50vw;
+    left: 22vw;
+    margin: 30px;
+    
+}
+
+#draggable {
+    text-align: center;
+    position: relative;
+    margin: 30px;
+    z-index: 2;
+}
+
+#draggable2 {
+    text-align: center;
+    position: relative;
+    margin: 30px;
+    z-index: 2;
+}
+
+#draggable3 {
+    text-align: center;
+    position: relative;
+    margin: 30px;
+    z-index: 2;
+}
+
+#droppable {
+    text-align: center;
+    position: relative;
+    margin: 30px;
+}
+
+#resizable {
+    margin: 35px 0;
+}
+
+#selectable .ui-selecting { 
+    background: #FECA40; 
+}
+
+#selectable .ui-selected { 
+    background: #F39814; 
+    color: white; 
+}
+  
+#selectable { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    width: 60%; 
+}
+
+#selectable li { 
+    margin: 10px; 
+    padding: 5px; 
+    font-size: 20px;
+}
+
+#sortable { 
+    
+    list-style-type: none; 
+    padding: 0; 
+    width: 60%; 
+    text-align: left;
+}
+
+#sortable li {
+    background-color: white; 
+    margin: 10px; 
+    padding: 5px; 
+    font-size: 20px;
+}
+
+.ui-menu { 
+    width: 150px;
+}
+
+
+
+.toggler { width: 500px; height: 200px; }
+#button { padding: .5em 1em; text-decoration: none; }
+#effect { width: 240px; height: 170px; padding: 0.4em; position: relative; }
+#effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+
+#button2 { padding: .5em 1em; text-decoration: none; }
+#effect2 { width: 240px; height: 170px; padding: 0.4em; position: relative; }
+#effect2 h3 { margin: 0; padding: 0.4em; text-align: center; }
+
+
+#tabs2 {
+    margin: 20px 0;
+    width: 500px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    max-width: 300px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #FFF;
+    
+}
+
+.poke-card::before {
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+}
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+#tabs2 {
+    text-align: left;
+}
+
+.form-control {
+    margin: 20px 0 20px 0;
+}
+
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+
